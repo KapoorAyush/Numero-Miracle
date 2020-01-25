@@ -1,0 +1,29 @@
+body {
+    background: #310c06;
+    font-family: "Nunito", sans-serif;
+}
+/*i{
+	color: #ffd1d1;
+	margin: 30%;
+}*/
+.icon{
+	font-size: 180px;
+}
+h4{
+	color: #ffd1d1;
+}
+
+.card{
+	margin: 200px auto 0px auto;
+	background-color: #310c06;
+	color: #ffd1d1;
+	padding-left: 50px;
+}
+#phone{
+	padding-top: 60px;
+}
+hr{
+	width: 300px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
