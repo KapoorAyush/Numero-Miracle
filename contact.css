@@ -12,7 +12,12 @@ body {
 h4{
 	color: #ffd1d1;
 }
-
+#spl{
+	color: #ffd1d1;
+}
+#spl:hover{
+	text-decoration: none;
+}
 .card{
 	margin: 200px auto 0px auto;
 	background-color: #310c06;
