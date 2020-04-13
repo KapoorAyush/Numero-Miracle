@@ -6,7 +6,18 @@
 	/* text-shadow: 0px 4px 3px rgba(0,0,0,0.4), */
 				 /* 0px 18px 23px rgba(0,0,0,0.1);  */
 }
-
+.navbar{
+	background-color: transparent;
+}
+.navbar-dark .navbar-brand{
+	background: radial-gradient(circle, #F48FB1 0%,  #CE93D8 20%, #B2EBF2 40%, #A5D6A7 60%, #B39DDB 100%);
+	-webkit-background-clip: text;
+	color: transparent ;
+	background-size: 400%;
+	animation: head 15s linear infinite alternate;
+	color: transparent;
+	margin-right: 2rem;
+}
 #headin h1{
 
 	font-family: 'Roboto', sans-serif;
@@ -33,11 +44,13 @@ body{
 	background: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1033&q=80);
 	background-size : cover;
 	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	font-family:'Lato', sans-serif;
 }
-html{
+/* html{
 	height: 100%;
-}
+} */
 hr{
 	width: 300px;
 	border-top: 1px solid #f8f8f8;
