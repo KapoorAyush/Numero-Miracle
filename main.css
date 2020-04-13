@@ -29,10 +29,10 @@
 	background-size: 400%;
 	animation: head 15s linear infinite alternate;
 	font-weight: 300;
-	font-size: 5rem;
+	font-size: 5em;
 
 	font-weight: 400;
-	letter-spacing: 1rem;
+	letter-spacing: 0.3em;
 }
 @keyframes head{
 	0%{
