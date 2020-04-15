@@ -23,6 +23,9 @@
 	color: transparent;
 	margin-right: 2rem;
 }
+.navbar-dark .navbar-brand:hover{
+	color:transparent;
+}
 .navbar.scrolled {
     background: rgb(0, 0, 0);
     transition:  1s;
