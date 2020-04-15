@@ -10,10 +10,12 @@
 }
 .navbar{
 	background-color: transparent;
+	font-size: 1.1rem;
 }
 .navbar-dark .navbar-brand{
 	background: radial-gradient(circle, #F48FB1 0%,  #CE93D8 20%, #B2EBF2 40%, #A5D6A7 60%, #B39DDB 100%);
 	-webkit-background-clip: text;
+	font-size: 1.5rem;
 	color: transparent ;
 	background-size: 400%;
 	animation: head 15s linear infinite alternate;
@@ -49,13 +51,13 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	font-family:'Lato', sans-serif;
-
+	overflow-x: hidden;
 }
- /* html{
+ html{
 	height: 100vh;
 	width: 100vw;
 	font-size: 1em;
-}  */
+} 
 hr{
 	width: 300px;
 	border-top: 1px solid #f8f8f8;
@@ -82,6 +84,15 @@ hr{
 	text-decoration: none;
 	color: white;
 	background-position: right center;
+  }
+  section{
+	  margin: 0;
+	  padding: 0;
+	  height: 100vh;
+	  /* width: 100vw; */
+  }
+  #second{
+	  background-color: wheat;
   }
   @media only screen and (max-width: 1000px) {
 	#main{
