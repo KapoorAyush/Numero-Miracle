@@ -61,6 +61,7 @@ body{
 	background-attachment: fixed;
 	font-family:'Lato', sans-serif;
 	overflow-x: hidden;
+
 }
  html{
 	height: 100vh;
@@ -94,14 +95,20 @@ hr{
 	color: white;
 	background-position: right center;
   }
-  section{
+  #first{
+	height: 100vh;
+  }
+  /* section{
 	  margin: 0;
 	  padding: 0;
 	  height: 100vh;
-	  /* width: 100vw; */
-  }
+  }*/
   #second{
-	  background-color: wheat;
+	background: #BBD2C5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+	height: 70vh;
   }
   @media only screen and (max-width: 1000px) {
 	#main{
@@ -113,3 +120,60 @@ hr{
 		font-size: 0.75rem;
 	}
   }
+
+  #headingGroup span {
+    color: rgb(127, 209, 209);
+}
+#headingGroup span:hover {
+    transition: 0.9s;
+    font-size: 5rem
+}
+#headingGroup span {
+    transition: 0.9s;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+#headingGroup{
+	margin: 200px auto;
+}
+#headingGroup h3{
+	color: rgb(0, 0, 0);
+}
+
+#headingGroup hr{
+    width: 50%;
+    margin-left: 13%;
+	border-top: 1px solid #1d1e4b;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+#third{
+	height: 20vh;
+}
+#fourth{
+	background: peachpuff;
+	  	width: 80vw;
+
+}
+#fdiv{
+	display: flex;
+	justify-content: center;
+}
+#fourth .row{
+	margin: 0;
+}
+#fourth .row div{
+	display: flex;
+	height: 15vh;
+	align-items: center;
+	justify-content: center;
+	background-color: silver;
+	border:1px solid black;
+	width: auto;
+}
+#fourth .row div:hover{
+	background-color: blanchedalmond;
+}
