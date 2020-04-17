@@ -174,9 +174,12 @@ hr{
 	border:1px solid black;
 	border-radius: 5px;
 	width: auto;
+	transition: 0.5s;
+	cursor: pointer;
 }
 #fourth .row .col-3:hover{
 	background-color: blanchedalmond;
+	font-size: 1.5em;
 }
 
 

@@ -65,38 +65,37 @@
     <div class="row">
       <!-- Trigger the Modal -->
 <!-- <img id="myImg" src="https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1033&q=80" alt="Snow" style="width:100%;max-width:300px"> -->
-
-      <div class="col-3 col-sm-2" id="1">1</div>
-      <div class="col-3 col-sm-2">2</div>
-      <div class="col-3 col-sm-2">3</div>
-      <div class="col-3 col-sm-2">4</div>
-      <div class="col-3 col-sm-2">5</div>
-      <div class="col-3 col-sm-2">6</div>
-      <div class="col-3 col-sm-2">7</div>
-      <div class="col-3 col-sm-2">8</div>
-      <div class="col-3 col-sm-2">9</div>
-      <div class="col-3 col-sm-2">10</div>
-      <div class="col-3 col-sm-2">11</div>
-      <div class="col-3 col-sm-2">12</div>
-      <div class="col-3 col-sm-2">13</div>
-      <div class="col-3 col-sm-2">14</div>
-      <div class="col-3 col-sm-2">15</div>
-      <div class="col-3 col-sm-2">16</div>
-      <div class="col-3 col-sm-2">17</div>
-      <div class="col-3 col-sm-2">18</div>
-      <div class="col-3 col-sm-2">19</div>
-      <div class="col-3 col-sm-2">20</div>
-      <div class="col-3 col-sm-2">21</div>
-      <div class="col-3 col-sm-2">22</div>
-      <div class="col-3 col-sm-2">23</div>
-      <div class="col-3 col-sm-2">24</div>
-      <div class="col-3 col-sm-2">25</div>
-      <div class="col-3 col-sm-2">26</div>
-      <div class="col-3 col-sm-2">27</div>
-      <div class="col-3 col-sm-2">28</div>
-      <div class="col-3 col-sm-2">29</div>
-      <div class="col-3 col-sm-2">30</div>
-      <div class="col-3 col-sm-2">31</div>
+       <div class="col-3 col-sm-2 " >1</div>
+      <div class="col-3 col-sm-2 " >2</div>
+      <div class="col-3 col-sm-2 " >3</div>
+      <div class="col-3 col-sm-2 " >4</div>
+      <div class="col-3 col-sm-2 " >5</div>
+      <div class="col-3 col-sm-2 " >6</div>
+      <div class="col-3 col-sm-2 " >7</div>
+      <div class="col-3 col-sm-2 " >8</div>
+      <div class="col-3 col-sm-2 " >9</div>
+      <div class="col-3 col-sm-2 " >10</div>
+      <div class="col-3 col-sm-2 " >11</div>
+      <div class="col-3 col-sm-2 " >12</div>
+      <div class="col-3 col-sm-2 " >13</div>
+      <div class="col-3 col-sm-2 " >14</div>
+      <div class="col-3 col-sm-2 " >15</div>
+      <div class="col-3 col-sm-2 " >16</div>
+      <div class="col-3 col-sm-2 " >17</div>
+      <div class="col-3 col-sm-2 " >18</div>
+      <div class="col-3 col-sm-2 " >19</div>
+      <div class="col-3 col-sm-2 " >20</div>
+      <div class="col-3 col-sm-2 " >21</div>
+      <div class="col-3 col-sm-2 " >22</div>
+      <div class="col-3 col-sm-2 " >23</div>
+      <div class="col-3 col-sm-2 " >24</div>
+      <div class="col-3 col-sm-2 " >25</div>
+      <div class="col-3 col-sm-2 " >26</div>
+      <div class="col-3 col-sm-2 " >27</div>
+      <div class="col-3 col-sm-2 " >28</div>
+      <div class="col-3 col-sm-2 " >29</div>
+      <div class="col-3 col-sm-2 " >30</div>
+      <div class="col-3 col-sm-2 " >31</div>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -130,21 +129,35 @@
           var modal = document.getElementById("myModal");
 
           // Get the image and insert it inside the modal - use its "alt" text as a caption
-          var img = document.getElementById("1");
+          var img = document.getElementsByClassName("col-3");
           var modalImg = document.getElementById("img01");
           var captionText = document.getElementById("caption");
-          img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src ="imgs/1.png";
-            captionText.innerHTML = this.alt;
-          }
-
-          // Get the <span> element that closes the modal
+          var src;
           var span = document.getElementsByClassName("close")[0];
 
-          // When the user clicks on <span> (x), close the modal
-          span.onclick = function() {
+          $(".col-3").click(function(event) {
+          var text = $(event.target).text();
+          console.log(text);
+           modal.style.display = "block";
+             src="imgs/"+text+".jpg";
+             modalImg.src =src;
+          });
+          
+          // for(var i=1;i<32;i++)
+          // {
+          //   img[i].onclick = function(){
+          //     modal.style.display = "block";
+          //     src="imgs/"+i+".jpg";
+          //     modalImg.src =src;
+          //     captionText.innerHTML = this.alt;
+          //   }
+            
+// When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
             modal.style.display = "none";
+          //}
+          // Get the <span> element that closes the modal
+
           }
 
 
