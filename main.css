@@ -122,7 +122,9 @@ hr{
   }
 
   #headingGroup span {
-    color: rgb(127, 209, 209);
+	background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+	-webkit-background-clip: text;
+	color: transparent;
 }
 #headingGroup span:hover {
     transition: 0.9s;
@@ -260,6 +262,12 @@ hr{
 	cursor: pointer;
   }
   
+#fourth h1{
+	color: white;
+	text-align: center;
+	padding: 3%;
+}
+
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
 	.modal-content {
@@ -267,5 +275,8 @@ hr{
 	}
 	#fourth .row{
 		margin: 50px 20px;
+	}
+	#headingGroup span:hover{
+		font-size: 4rem;
 	}
   }
