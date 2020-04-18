@@ -140,7 +140,7 @@ hr{
 	margin: 200px auto;
 }
 #headingGroup h3{
-	color: rgb(0, 0, 0);
+	color: rgb(248, 244, 244);
 }
 
 #headingGroup hr{
@@ -154,8 +154,12 @@ hr{
 	height: 20vh;
 }
 #fourth{
-	background: peachpuff;
-	  	width: 80vw;
+	/* background: peachpuff; */
+	background: #BBD2C5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	  	width: 100vw;
 
 }
 #fdiv{
@@ -163,33 +167,32 @@ hr{
 	justify-content: center;
 }
 #fourth .row{
-	margin: 0;
+	margin: 50px 100px;
 }
 #fourth .row .col-3{
 	display: flex;
 	height: 15vh;
 	align-items: center;
 	justify-content: center;
-	background-color: silver;
+	background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);	
+	background-size: 200% 200%;
+	background-position: left;
 	border:1px solid black;
 	border-radius: 5px;
 	width: auto;
 	transition: 0.5s;
 	cursor: pointer;
-}
-#fourth .row .col-3:hover{
-	background-color: blanchedalmond;
 	font-size: 1.5em;
 }
+#fourth .row .col-3:hover{
+	/* background-color: blanchedalmond; */
+	font-size: 2em;
+	background-position: right;
+	transition: 0.5s;
+}
 
 
 
-
-/* #myImg {
-	border-radius: 5px;
-	cursor: pointer;
-	transition: 0.3s;
-  } */
   
   #myImg:hover {opacity: 0.7;}
   
@@ -261,5 +264,8 @@ hr{
   @media only screen and (max-width: 700px){
 	.modal-content {
 	  width: 100%;
+	}
+	#fourth .row{
+		margin: 50px 20px;
 	}
   }
