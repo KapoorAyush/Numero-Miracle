@@ -301,6 +301,34 @@ hr{
 	padding-bottom: 0%;
 }
 
+button:focus {
+    outline:0;
+}
+
+#footer a:hover{
+    color: white;
+}
+#footer{
+    background-color: black;
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+#footer a{
+    font-size: 1.5rem;
+    padding: 8px;
+    color: #b8afaf;
+    transition: 0.4s;
+}
+#footer div p{
+    margin-top: 40px;
+    color: #b8afaf;
+    font-size: 0.8rem;
+}
+
+
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
 	.modal-content {
