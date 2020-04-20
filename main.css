@@ -190,7 +190,7 @@ hr{
 	/* background-color: blanchedalmond; */
 	font-size: 2em;
 	background-position: right;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
 
@@ -266,6 +266,7 @@ hr{
 	color: white;
 	text-align: center;
 	padding: 3%;
+	padding-bottom: 0%;
 }
 
   /* 100% Image Width on Smaller Screens */
