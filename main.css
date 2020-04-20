@@ -107,7 +107,7 @@ hr{
 	background: #BBD2C5;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	
+	font-family: Roboto;
 	height: 70vh;
   }
   @media only screen and (max-width: 1000px) {
@@ -125,6 +125,7 @@ hr{
 	background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
 	-webkit-background-clip: text;
 	color: transparent;
+	font-weight: 100;
 }
 #headingGroup span:hover {
     transition: 0.9s;
