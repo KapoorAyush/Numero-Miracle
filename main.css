@@ -150,6 +150,7 @@ hr{
 	align-items: center;
 	padding-left: 10%;
 	overflow-x: hidden;
+	margin: 0em;
 }
 #headingGroup hr{
     width: 50%;
@@ -346,6 +347,7 @@ button:focus {
 		height: 40vw;
 	}
 	#second .row{
+
 		padding-left: 0%;
 		overflow-x: hidden;
 	}
