@@ -1,3 +1,13 @@
+body{
+	background: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1033&q=80);
+	background-size : cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family:'Lato', sans-serif;
+	overflow-x: hidden;
+}
+
 #main{
 	text-align: center;
 	/* padding-top: 30%; */
@@ -52,16 +62,6 @@
 	100%{
 		background-position: 200%;
 	}
-}
-body{
-	background: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1033&q=80);
-	background-size : cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	font-family:'Lato', sans-serif;
-	overflow-x: hidden;
-
 }
  html{
 	height: 100vh;
@@ -149,6 +149,7 @@ hr{
 	height: 100%;
 	align-items: center;
 	padding-left: 10%;
+	overflow-x: hidden;
 }
 #headingGroup hr{
     width: 50%;
@@ -164,6 +165,7 @@ hr{
 }
 .info{
 	margin: 1%;
+	margin-left: 3%;
 }
 .info a{
 	color: white;
@@ -193,7 +195,7 @@ hr{
 	background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-	  	width: 100vw;
+	  	/* width: 100vw; */
 
 }
 #fdiv{
@@ -341,6 +343,10 @@ button:focus {
 		font-size: 4rem;
 	}
 	#debun{
-		height: 35vw;
+		height: 40vw;
+	}
+	#second .row{
+		padding-left: 0%;
+		overflow-x: hidden;
 	}
   }
