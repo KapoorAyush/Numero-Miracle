@@ -44,7 +44,9 @@ body{
 .active{
 	border-bottom: 3px solid violet;
 }
-
+#fli{
+	margin-left: 40px;
+}
 #headin h1{
 
 	font-family: 'Roboto', sans-serif;
@@ -348,5 +350,8 @@ button:focus {
 	}
 	.close{
 		right: 20px;
+	}
+	#mainNavbar .nav-item{
+		margin-left: 0;
 	}
   }
