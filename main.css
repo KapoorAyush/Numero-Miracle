@@ -41,6 +41,10 @@ body{
     transition:  1s;
     font-size: 1rem;
 }
+.active{
+	border-bottom: 3px solid violet;
+}
+
 #headin h1{
 
 	font-family: 'Roboto', sans-serif;
@@ -227,7 +231,9 @@ hr{
 	background-position: right;
 	transition: 0.3s;
 }
-
+#fourth h1{
+	margin-top: 25px;
+}
 
 
   
@@ -255,20 +261,7 @@ hr{
 	width: 80%;
 	max-width: 700px;
   }
-  
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  /* #caption {
-	margin: auto;
-	display: block;
-	width: 80%;
-	max-width: 700px;
-	text-align: center;
-	color: #ccc;
-	padding: 10px 0;
-	height: 150px;
-  } */
-  
-  /* Add Animation - Zoom in the Modal */
+
   .modal-content, #caption {
 	animation-name: zoom;
 	animation-duration: 0.6s;
@@ -352,5 +345,8 @@ button:focus {
 	}
 	#second .row .col-7{
 		padding: 0;
+	}
+	.close{
+		right: 20px;
 	}
   }
