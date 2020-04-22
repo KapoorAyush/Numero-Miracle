@@ -14,26 +14,26 @@
    <script src="https://kit.fontawesome.com/8ae3bbb038.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="mainNavbar">
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark " id="mainNavbar">
   <div class="container">
         <a class="navbar-brand" href="">Numero Miracles</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       -->
+         <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#first"><span class="sr-only"></span>Home </a>
+            <li class="nav-item active ml-5">
+              <a class="nav-link" href="#first"></span>Home </a>
             </li>
             <li class="nav-item ">
               <a class="nav-link" href="#second">About </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ">
                 <a class="nav-link" href="#fourth"> Date Picker </a>
             </li>
           </ul>
-        </div>
+        <!-- </div> -->
       </div>       
     </nav>
 <section id="first">
@@ -159,6 +159,10 @@
              src="imgs/"+text+".jpg";
              modalImg.src =src;
           });
+          $( '#mainNavbar .navbar-nav a' ).on( 'click', function () {
+	$( '#mainNavbar .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	$( this ).parent( 'li' ).addClass( 'active' );
+});
           
           // for(var i=1;i<32;i++)
           // {
