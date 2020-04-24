@@ -61,6 +61,9 @@ body{
 	font-weight: 400;
 	letter-spacing: 1rem;
 }
+#second .container span{
+	cursor: pointer;
+}
 @keyframes head{
 	0%{
 		background-position: 0%;
