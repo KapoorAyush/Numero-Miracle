@@ -76,7 +76,8 @@ body{
 	height: 100vh;
 	width: 100vw;
 	font-size: 1em;
-} 
+	scroll-behavior: smooth;
+}
 hr{
 	width: 300px;
 	border-top: 1px solid #f8f8f8;
