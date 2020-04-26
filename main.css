@@ -248,7 +248,7 @@ hr{
 #fdiv hr{
 	border-color: transparent;
 	background: radial-gradient(circle, #F48FB1 0%,  #CE93D8 20%, #B2EBF2 40%, #A5D6A7 60%, #B39DDB 100%);
-	-webkit-background-clip: border-box;
+	background-clip: border-box;
 	background-size: 200%;
 	animation: head 5s linear infinite alternate;
 }
